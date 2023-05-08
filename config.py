@@ -1,6 +1,6 @@
 """
 Apache License 2.0
-Copyright (c) 2022 @PYRO_BOTZ
+Copyright (c) 2022 @VKlinks_in
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -26,18 +26,18 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "22980464")
+    API_HASH  = os.environ.get("API_HASH", "bef9156cf7263f8e4944b0a883bd6cc4")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5874640435:AAE5-R1HyaRFByPZBHVdzxmPxIl2aePl2PI") 
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","pyro-botz")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","cluster0")     
+    DB_URL  = os.environ.get("DB_URL","ongodb+srv://kkmovielink:kkmovielink@cluster0.eo9xh39.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
+    START_PIC   = os.environ.get("START_PIC", "https://te.legra.ph/file/9447fcbb521ca5403cc89.jpg")
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1394730272').split()]
     FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
 
